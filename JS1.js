@@ -40,3 +40,18 @@ num /= 3;
 num += 1;
 num -= 1;
 alert(num);
+
+/*task8*/
+let age = prompt('Сколько вам лет?');
+alert(age);
+
+/*task9*/
+let user = {
+    name: "Admin",
+    age: 20,
+    isAdmin: True
+};
+
+/*task10*/
+let name_2 = prompt('Как вас зовут?');
+alert(`Привет, ${name_2}!`);

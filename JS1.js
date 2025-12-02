@@ -20,3 +20,7 @@ alert(first_num + second_num);
 alert(first_num - second_num);
 alert(first_num * second_num);
 alert(first_num / second_num);
+
+/*task5*/
+let result = 2**5;
+alert(result)

@@ -23,4 +23,11 @@ alert(first_num / second_num);
 
 /*task5*/
 let result = 2**5;
-alert(result)
+alert(result);
+
+
+/*task6*/
+a = 9;
+let b = 2;
+alert(a % b);
+

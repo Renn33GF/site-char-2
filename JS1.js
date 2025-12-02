@@ -47,9 +47,9 @@ alert(age);
 
 /*task9*/
 let user = {
-    name: "Admin",
-    age: 20,
-    isAdmin: True
+    user: "Andrey",
+    age: 18,
+    isAdmin: true
 };
 
 /*task10*/

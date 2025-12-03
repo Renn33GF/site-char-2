@@ -200,4 +200,84 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding-top: 147px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    background-image: url(img/mobile_star.png), url(img/header_stars_1.png), url(img/header_stars_2.png);
+    background-position: top -100px right -100px, top 64px left 37px, bottom 28px right 34px;
+    background-size: auto, 80px, 80px;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 131px;
+  }
+  .header__title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__surttitle {
+    padding-bottom: 36px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .line {
+    height: 51px;
+    padding-left: 27px;
+    padding-right: 27px;
+    gap: 27px;
+  }
+  .line__body {
+    font-size: 16px;
+  }
+  .line svg {
+    min-width: 19px;
+    min-height: 19px;
+  }
+  .card {
+    padding-top: 48px;
+  }
+  .card__title {
+    font-size: 40px;
+    line-height: 49px;
+    padding-bottom: 48px;
+  }
+  .card__body {
+    display: none;
+  }
+  .card__games {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: end;
+    gap: 24px 16px;
+  }
+  .card__game {
+    width: 100%;
+  }
+  .card__game:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  .card__game_top-line {
+    margin-top: 0;
+  }
+  .card__game_bottom-line {
+    margin-bottom: 0;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */

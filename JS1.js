@@ -1,37 +1,35 @@
-/*task 1*/
+/* Task 1 */
 let a = 10;
 alert(a);
 a = 20;
 alert(a);
 
-/*task 2*/
-const releaze_iphone_data = 2007;
-alert(releaze_iphone_data);
+/* Task 2 */
+const releaseIphoneDate = 2007;
+alert(releaseIphoneDate);
 
-/*task 3*/
-const author_name = "Брендан Эйх";
-alert(author_name);
+/* Task 3 */
+const authorName = "Брендан Эйх";
+alert(authorName);
 
+/* Task 4 */
+const firstNum = 10;
+const secondNum = 2;
+alert(firstNum + secondNum);
+alert(firstNum - secondNum);
+alert(firstNum * secondNum);
+alert(firstNum / secondNum);
 
-/*task4*/
-const first_num = 10;
-const second_num = 2;
-alert(first_num + second_num);
-alert(first_num - second_num);
-alert(first_num * second_num);
-alert(first_num / second_num);
-
-/*task5*/
-let result = 2**5;
+/* Task 5 */
+let result = 2 ** 5;
 alert(result);
 
-
-/*task6*/
-a = 9;
+/* Task 6 */
+let a2 = 9;
 let b = 2;
-alert(a % b);
+alert(a2 % b);
 
-/*task7*/
+/* Task 7 */
 let num = 1;
 num += 5;
 num -= 3;
@@ -41,17 +39,17 @@ num += 1;
 num -= 1;
 alert(num);
 
-/*task8*/
+/* Task 8 */
 let age = prompt('Сколько вам лет?');
 alert(age);
 
-/*task9*/
+/* Task 9 */
 let user = {
-    user: "Andrey",
+    name: "Andrey",  
     age: 18,
     isAdmin: true
 };
 
-/*task10*/
-let name_2 = prompt('Как вас зовут?');
-alert(`Привет, ${name_2}!`);
+/* Task 10 */
+let userName = prompt('Как вас зовут?');  
+alert(`Привет, ${userName}!`);

@@ -1,4 +1,4 @@
-$text-color: gb(32, 32, 39);
+$text-color: rgb(32, 32, 39);
 $text-font: Montserrat;
 
 * {
@@ -72,7 +72,7 @@ body {
         transition: 0.3s;
     }
 
-    &__btn:hover {
+    &__button:hover {
         cursor: pointer;
         background: rgb(255, 255, 255);
         color: rgb(32, 32, 39);
@@ -156,7 +156,7 @@ body {
     background: rgb(255, 255, 255);
     transition: transform 0.3s, background 0.3s;
 
-        &-desc {
+        &-description {
             padding: 32px;
             padding-bottom: 36px;
         }
@@ -203,6 +203,105 @@ body {
         margin-bottom: 39px;        
     }
 }
+.mini-games {
+    background: rgb(32, 32, 39);
+    background-image: url(img/games_stars_1.png),url(img/games_stars_2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+    top 93px right 45px,
+    bottom 45px right 52px;
+    padding-bottom: 144px;
+
+    &__title{
+        color: rgb(255, 255, 255);
+        font-family: $text-font;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 72px;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &__game {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        justify-content: space-between;
+
+        &-content {
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &-title {
+            color: $text-color;
+            font-family: $text-font;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 24px;
+        }
+
+        &-description {
+            color: $text-color;
+            font-family: $text-font;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-bottom: 36px;
+        }
+
+        &-button {
+            width: 247px;
+            height: 66px;
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            border: 1px solid rgb(32, 32, 39);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10;
+            padding: 16px 28px 16px 28px;
+            color: rgb(255, 255, 255);
+            font-family: $text-font;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: transform 0.3s, background 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                background: rgb(255, 255, 255);
+                color: $text-color;
+            }
+        }
+
+        &_flip {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -225,3 +324,5 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
+@import "mobile";

@@ -63,7 +63,7 @@ body {
   background: rgb(32, 32, 39);
   transition: 0.3s;
 }
-.header__btn:hover {
+.header__button:hover {
   cursor: pointer;
   background: rgb(255, 255, 255);
   color: rgb(32, 32, 39);
@@ -139,7 +139,7 @@ body {
   background: rgb(255, 255, 255);
   transition: transform 0.3s, background 0.3s;
 }
-.card__game-desc {
+.card__game-description {
   padding: 32px;
   padding-bottom: 36px;
 }
@@ -180,6 +180,94 @@ body {
   margin-bottom: 39px;
 }
 
+.mini-games {
+  background: rgb(32, 32, 39);
+  background-image: url(img/games_stars_1.png), url(img/games_stars_2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 93px right 45px, bottom 45px right 52px;
+  padding-bottom: 144px;
+}
+.mini-games__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 72px;
+}
+.mini-games__body {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.mini-games__game {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  justify-content: space-between;
+}
+.mini-games__game-content {
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mini-games__game-title {
+  color: gb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+}
+.mini-games__game-description {
+  color: gb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 36px;
+}
+.mini-games__game-button {
+  width: 247px;
+  height: 66px;
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  border: 1px solid rgb(32, 32, 39);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: transform 0.3s, background 0.3s;
+}
+.mini-games__game-button:hover {
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  color: gb(32, 32, 39);
+}
+.mini-games__game_flip {
+  flex-direction: row-reverse;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -200,4 +288,84 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding-top: 147px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    background-image: url(img/mobile_star.png), url(img/header_stars_1.png), url(img/header_stars_2.png);
+    background-position: top -100px right -100px, top 64px left 37px, bottom 28px right 34px;
+    background-size: auto, 80px, 80px;
+  }
+  .header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 131px;
+  }
+  .header__title {
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+  }
+  .header__surttitle {
+    padding-bottom: 36px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .header__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .line {
+    height: 51px;
+    padding-left: 27px;
+    padding-right: 27px;
+    gap: 27px;
+  }
+  .line__body {
+    font-size: 16px;
+  }
+  .line svg {
+    min-width: 19px;
+    min-height: 19px;
+  }
+  .card {
+    padding-top: 48px;
+  }
+  .card__title {
+    font-size: 40px;
+    line-height: 49px;
+    padding-bottom: 48px;
+  }
+  .card__body {
+    display: none;
+  }
+  .card__games {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: end;
+    gap: 24px 16px;
+  }
+  .card__game {
+    width: 100%;
+  }
+  .card__game:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  .card__game_top-line {
+    margin-top: 0;
+  }
+  .card__game_bottom-line {
+    margin-bottom: 0;
+  }
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=index.css.map */

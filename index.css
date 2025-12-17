@@ -23,7 +23,7 @@ body {
   padding-bottom: 156px;
 }
 .header__title {
-  color: gb(32, 32, 39);
+  color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
@@ -217,7 +217,7 @@ body {
   align-items: flex-start;
 }
 .mini-games__game-title {
-  color: gb(32, 32, 39);
+  color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
@@ -227,7 +227,7 @@ body {
   padding-bottom: 24px;
 }
 .mini-games__game-description {
-  color: gb(32, 32, 39);
+  color: rgb(32, 32, 39);
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 400;
@@ -262,7 +262,7 @@ body {
 .mini-games__game-button:hover {
   cursor: pointer;
   background: rgb(255, 255, 255);
-  color: gb(32, 32, 39);
+  color: rgb(32, 32, 39);
 }
 .mini-games__game_flip {
   flex-direction: row-reverse;

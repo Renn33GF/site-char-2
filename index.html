@@ -158,5 +158,23 @@
         </div>
     </section>
     <footer class="footer">Все права защищены.</footer>
+    
+        <script>
+        function guess_number() {
+            let answer = Math.floor(Math.random() * (100 - 1 + 1)) + 1
+            let user_num = prompt("Напишите любое число")
+            while (true) {
+                if (user_num < answer) {
+                    user_num = prompt("Ваше число меньше ответа")
+                } else if (user_num > answer) {
+                    user_num = prompt("Ваше число больше ответа")
+                } else if (user_num == answer) {
+                    alert("Поздравляю вы выйграли!")
+                    break
+                }
+            }
+        }
+    </script>
+
 </body>
 </html>

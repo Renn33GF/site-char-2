@@ -395,7 +395,7 @@ body {
   padding-right: calc(50% - 600px);
 }
 
-@media (max-width: 630px) {
+@media (max-width: 425px) {
   .header {
     padding-top: 147px;
     -ms-grid-columns: (1fr)[4];
@@ -520,6 +520,9 @@ body {
     width: 285px;
     font-size: 16px;
   }
+  .mini-games__game-img {
+    width: 100%;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -529,8 +532,6 @@ body {
 @media (max-width: 1024px) {
   .mini-games__game-img {
     width: 45%;
-    max-width: 50%;
-    height: auto;
   }
   .line {
     height: 51px;
@@ -545,18 +546,30 @@ body {
     min-width: 19px;
     min-height: 19px;
   }
+  .mini-games__game-content {
+    padding: 30px;
+  }
+  .mini-games__game-description {
+    font-size: 15px;
+  }
+  .mini-games__game-title {
+    font-size: 35px;
+  }
+  .mini-games__game-button {
+    font-size: 10px;
+  }
   .card__game-title {
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
   }
-  .game__game-description {
-    font-size: 16px;
-    line-height: 20px;
+  .card__game-description {
+    padding-left: 5px;
+    padding-right: 5px;
   }
-  .game__game-button {
-    height: 55px;
-    width: 285px;
-    font-size: 16px;
+  .mini-games__game-button {
+    width: 150px;
+  }
+  .card__game-number {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */

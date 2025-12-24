@@ -1,38 +1,25 @@
 @media (max-width: 1024px){
+
+    
     .mini-games__game-img {
-        width: 33%;
-        max-width: 50%;
-        height: auto;
+        max-width: auto;
+
     }
-    .line {
-        height: 51px;
-        padding-left: 20px;
-        padding-right: 20px;
-        gap: 20px;
+    .mini-games__game-content{
+        padding: 30px;
+    }
+    .mini-games__game-description{
+        font-size: 15px;
+    }
+    .mini-games__game-title{
+        font-size: 35px;
+    }
+    .mini-games__game-button{
+        font-size: 10px;
 
-        &__body{
-            font-size: 16px;
-        }
-
-        & svg {
-            min-width: 19px;
-            min-height: 19px;
-        }
+    }
+    .mini-games__game-button {
+        width: 150px;
     }
 
-.card__game-title{
-    font-size: 25px;
-    line-height: 30px;
-}
-
-.game__game-description {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.game__game-button {
-    height: 55px;
-    width: 285px;
-    font-size: 16px;
-}
 }

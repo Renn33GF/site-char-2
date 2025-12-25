@@ -1,25 +1,5 @@
-@media (max-width: 1024px){
-
-    
+@media (max-width: 1024px) {
     .mini-games__game-img {
-        max-width: auto;
-
+        width: 45%;
     }
-    .mini-games__game-content{
-        padding: 30px;
-    }
-    .mini-games__game-description{
-        font-size: 15px;
-    }
-    .mini-games__game-title{
-        font-size: 35px;
-    }
-    .mini-games__game-button{
-        font-size: 10px;
-
-    }
-    .mini-games__game-button {
-        width: 150px;
-    }
-
 }

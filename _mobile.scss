@@ -1,4 +1,6 @@
+
 @media (max-width: 767px){
+
 
     .header{
         padding-top: 147px;
@@ -19,7 +21,7 @@
         }
 
         &__title{
-            font-size: 40px;
+            font-size: 30px;
             line-height: 49px;
             text-align: center;
         }
@@ -116,14 +118,16 @@
 }
 
 .mini-games__game-content {
-    padding: 29px 29px 32px 29px;
+    padding: 20px 20px 30px 20px;
 }
 
 .mini-games__game-title {
     font-size: 32px;
     line-height: 39px;
 }
-
+.mini-games__game-img{
+    width: 100%;
+}
 .mini-games__game-description {
     font-size: 16px;
     line-height: 20px;
@@ -131,7 +135,7 @@
 
 .mini-games__game-button {
     height: 55px;
-    width: 285px;
+    width: 200px;
     font-size: 16px;
 }
 .mini-games__game-img {

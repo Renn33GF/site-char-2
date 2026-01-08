@@ -364,6 +364,42 @@ body {
   .card__game_bottom-line {
     margin-bottom: 0;
   }
+  .card {
+    display: none;
+  }
+  .mini-games {
+    padding-top: 48px;
+    background-image: none;
+    padding-bottom: 10px;
+  }
+  .mini-games__title {
+    padding-bottom: 48px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .mini-games__body {
+    gap: 24px;
+  }
+  .mini-games__game {
+    height: 100%;
+    flex-direction: column-reverse;
+  }
+  .mini-games__game-content {
+    padding: 29px 29px 32px 29px;
+  }
+  .mini-games__game-title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .mini-games__game-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .mini-games__game-button {
+    height: 55px;
+    width: 285px;
+    font-size: 16px;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;

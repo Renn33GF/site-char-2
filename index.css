@@ -404,4 +404,9 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+@media (max-width: 1024px) {
+  .mini-games__game-img {
+    width: 45%;
+  }
 }/*# sourceMappingURL=index.css.map */

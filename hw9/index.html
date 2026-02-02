@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini-games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="task_1">
+        <!--task 1 -->
+        <h1 id="mainHeading">Добро пожаловать в мир JavaScript!</h1>
+        <button id="toggleButton">Скрыть текст</button>
+    </header>
+    <div class="task_2">    
+        <!--task 2 -->
+        <p id="textParagraph">Это текст, цвет которого можно изменить</p>
+        <button id="colorButton">Изменить цвет</button>
+    </div>
+
+    <div class="task_3">
+        <!--task 3 -->
+        <h2 id="title">Hello, World!</h2>
+        <button id="change-text">Change text</button>
+    </div>
+
+    <div class="task-4">
+        <!--task 4 -->
+        <p class="description">Текст с классом</p>
+        <p>Текст без класса</p>
+        <p class="description">Текст с классом</p>
+        <p>Текст без класса</p>
+        <button id="change-desc">Изменить текст с классом</button>
+    </div>
+
+    <div class="task-5">
+        <p class="description2">Текст с классом</p>
+        <p>Текст без класса</p>
+        <p class="description2">Текст с классом</p>
+        <p>Текст без класса</p>
+        <button id="change-desc2">Изменить текст с классом</button>
+    </div>
+
+    <div class="task-6">
+        <button id="addButton">Добавить элемент</button>
+    </div>
+
+    <div class="task-7">
+        <p class="description3">Текст 1</p>
+        <p class="description3">Текст 2</p>
+        <p class="description3">Текст 3</p>
+        <p class="description3">Текст 4</p>
+        <button id="del-element">Удалить элемент</button>
+    </div>
+
+
+   <script>
+        /*task 1*/
+        const heading = document.querySelector('#mainHeading');
+        const toggleButton = document.querySelector('#toggleButton');
+        
+        let isTextVisible = true;
+        function toggleText() {
+            if (isTextVisible) {
+                heading.style.display = 'none';
+                toggleButton.textContent = 'Показать текст';
+                isTextVisible = false;
+            } else {
+                heading.style.display = 'block';
+                toggleButton.textContent = 'Скрыть текст';
+                isTextVisible = true;
+            }
+        }
+        toggleButton.addEventListener('click', toggleText);
+
+
+
+        /*task 2*/
+        const paragraph = document.querySelector('#textParagraph');
+        const colorButton = document.querySelector('#colorButton');
+        
+        let isGreen = false;
+        
+        colorButton.addEventListener('click', function() {
+            if (isGreen) {
+                paragraph.style.color = 'black';
+                isGreen = false;
+            } else {
+                paragraph.style.color = 'green';
+                isGreen = true;
+            }
+        });
+
+
+        /*task 3*/
+        const title = document.querySelector('#title');
+        const changeButton = document.querySelector('#change-text');
+    
+        let isChanged = false;
+        const originalText = 'Hello, World!';
+        const newText = 'Привет, мир!';
+        
+        changeButton.addEventListener('click', function() {
+            if (isChanged) {
+                title.textContent = originalText;
+                isChanged = false;
+            } else {
+                title.textContent = newText;
+                isChanged = true;
+            }
+        });
+
+
+        /*task 4*/
+        const descriptions = document.querySelectorAll('.description')
+        const changeDescBtn = document.querySelector('#change-desc')
+
+        changeDescBtn.addEventListener('click', function () {
+            descriptions.forEach(element => {
+                element.textContent = 'Измененный текст'
+            });
+        })
+
+        /*task 5*/
+        const descriptions2 = document.querySelectorAll('.description2')
+        const changeDescBtn2 = document.querySelector('#change-desc2')
+
+        changeDescBtn2.addEventListener('click', function () {
+            descriptions2.forEach(element => {
+                element.textContent = 'Новый текст'
+            });
+        })
+
+        /*task 6*/
+        const addButton = document.querySelector('#addButton');
+        
+        addButton.addEventListener('click', function() {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+        
+
+        /*task 7*/
+        const descriptions3 = document.querySelectorAll('.description3')
+        const deleteElementBtn = document.querySelector('#del-element')
+
+        deleteElementBtn.addEventListener('click', function () {
+            descriptions3[0].remove()
+        })
+    </script>
+</body>
+</html>

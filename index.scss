@@ -326,6 +326,30 @@ body {
 
 }
 
+.line {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.stripe-track {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между элементами */
+    will-change: transform;
+}
+
+.line__body {
+    display: inline-block;
+    margin: 0;
+    font-size: 16px; /* Настройте по вашему желанию */
+}
+
+svg {
+    flex-shrink: 0;
+}
+
 
 @import "mobile";
 @import "table";

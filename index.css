@@ -315,7 +315,7 @@ svg {
   flex-shrink: 0;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 660px) {
   .header {
     padding-top: 147px;
     grid-template-columns: repeat(4, 1fr);
@@ -435,6 +435,21 @@ svg {
 }
 @media (max-width: 1024px) {
   .mini-games__game-img {
-    width: 45%;
+    min-width: 40%;
+  }
+  .card__game-title {
+    min-width: 40%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .mini-games__game-title {
+    font-size: 42px;
+  }
+  .card__game-number {
+    text-align: center;
   }
 }/*# sourceMappingURL=index.css.map */

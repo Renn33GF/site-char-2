@@ -8,7 +8,7 @@ function guess_number() {
         } else if (user_num > answer) {
             user_num = prompt("Ваше число больше ответа");
         } else if (user_num == answer) {
-            alert("Поздравляю вы выйграли!");
+            alert("Поздравляю вы выиграли!");
             break;
         }
     }
